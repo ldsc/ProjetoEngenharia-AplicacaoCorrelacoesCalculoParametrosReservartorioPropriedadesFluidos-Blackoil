@@ -1,0 +1,10 @@
+	#Dados referentes ao poço 1
+	0		# Valor de pressao no ponto (Zero se deseja usar vetor) 
+      5000		# Valores máximo de pressão no reservatório (psi)
+      200		# Variação de 200 psi (delta de pressão)
+      35		# Grau API do óleo 
+      0.8		# Densidade do gás 
+      176		# Temperatura do reservatório (°F)
+      0.8088		# Densidade do gás no separador
+      223.2114467	# Rsb = Rs no ponto de bolha (scf/stb)
+      0.9339		# Densidade do oleo

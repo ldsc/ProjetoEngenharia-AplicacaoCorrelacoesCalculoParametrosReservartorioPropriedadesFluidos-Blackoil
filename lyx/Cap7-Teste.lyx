@@ -1,0 +1,650 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Teste
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Teste"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter - Teste} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 1: Entrada de dados pelo teclado
+\end_layout
+
+\begin_layout Standard
+Neste primeiro teste, foi escolhido a entrada de dados pelo teclado (Veja
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura1"
+
+\end_inset
+
+) , onde o usuário deverá digitar os dados solicitados na ordem correta
+ (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inserção-dos-dados"
+
+\end_inset
+
+).
+ Foi testada a opção de calcular o Ponto de bolha deste reservatório na
+ correlação de Vasquez e Beggs (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cálculo-da-pressão"
+
+\end_inset
+
+) e em seguida o Fator volume de formação do óleo no ponto de bolha utilizando
+ a correlação de Standing (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cálculo-do-fator"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.1-Saida01.png
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando o menu de escolha da forma de entrada dos dados
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.2-Saida02.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inserção dos dados pelo usuário utilizando o teclado
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Inserção-dos-dados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.3-Saida03.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cálculo da pressão de bolha pela correlação de Vasquez e Beggs
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cálculo-da-pressão"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.4-Saida04.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cálculo do fator volume de formação do óleo no ponto de bolha pela correlação
+ de Standing
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cálculo-do-fator"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 2: Estrada de dados por arquivo de disco
+\end_layout
+
+\begin_layout Standard
+Neste segundo teste, foi escolhido a entrada de dados por arquivo de disco,
+ onde o usuário deve informar o nome do arquivo juntamente com sua extensão
+ que contém os dados (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inserção-dos-dados"
+
+\end_inset
+
+), também foi testada a função de cálculo dos parâmteros em diversos pontos
+ de acordo com a variação de pressão, lembrando que esta função não é exclusiva
+ da entrada de dados por arquivo de disco, como também o cálculo de parâmtros
+ em um único ponto não é exclusivo da entrada de dados pelo teclado, isto
+ será melhor abordado no próximo capítulo.
+ 
+\end_layout
+
+\begin_layout Standard
+Após a inserir o nome do arquivo foi testado o cálculo do Fator Z de compressibi
+lidade do gás pela correlação de Papay (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inserção-de-dados-disco-Calculo-Z"
+
+\end_inset
+
+).
+ Os resultados além de serem mostrados na tela (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Valores-do-fator"
+
+\end_inset
+
+), também são plotados pelo programa Gnuplot (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gráfico-do-Fator"
+
+\end_inset
+
+).
+ Em seguida foi testado o cálculo da Razão de Solubilidade do reservatório
+ pela correlação de Vasquez e Beggs (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cálculo-da-Razão"
+
+\end_inset
+
+), e simililarmente ao exemplo anterior, os resultados foram mostrados na
+ tela (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cálculo-da-Razão"
+
+\end_inset
+
+) e plotados pelo Gnuplot (Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gráfico-da-Razão"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.5-Saida05.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inserção de dados por arquivo de disco e escolha de calcular Z pela correlação
+ Papay
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Inserção-de-dados-disco-Calculo-Z"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.6-Saida06.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valores do Fator Z para variados valores de pressão neste reservatório
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Valores-do-fator"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.7-Saida07.png
+	width 100text%
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico do Fator Z versus Pressão gerado pelo Gnuplot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gráfico-do-Fator"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.8-Saida08.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cálculo da Razão de Solubilidade pela correlação de Vasquez e Beggs
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cálculo-da-Razão"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig7.9-Saida09.png
+	width 100text%
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico da Razão de Solubilidade versus Pressão gerado pelo Gnuplot
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gráfico-da-Razão"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

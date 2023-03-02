@@ -1,0 +1,125 @@
+% Encoding: UTF-8
+@String{LENEP  = {Laboratório de Engenharia e Exploração de Petróleo}}
+%--------------------------------------------------------------------
+% NAME: andre.bib (18/02/2002)
+%
+% O que é um arquivo BiBTeX?
+% É um arquivo em modo texto (tipo ASCII), que inclui referências completas para os
+% trabalhos (artigos/relatórios/teses/etc) a serem citados em sua monografia/dissertação/tese.
+%
+% Porque usar?
+% A vantagem de usar uma base de dados com as referencias bibliográficas
+% (como este arquivo), é que seu editor científico (ex: o LyX) 
+% poderá gerar as citações nos mais variados formatos acadêmicos.
+%
+% Como faço para usar?
+% No caso do LyX(2.0.2), você insere a base bibliográfica usando:
+% Lyx->Inserir->Listas e Indices->Bibliografia BiBTeX
+%
+% INSTRUÇÕES:
+% 0- Use o find (crtl-s ##)  para localizar as diferentes seções desta base de dados
+%    para próximo ítem basta digitar ctrl-s novamente (no emacs!).
+% 1-Use o emacs ou um editor simples para editar este arquivo
+%   Pode acentuar normalmente, usando çá,,; 
+
+% 2-Use o emacs (menu BIBTEX) para verificar a consistencia das entradas
+% Se tiver alguma inconsistência o emacs deve informar.
+
+% 3-Use o programa bibtool para gerar saída formatada.
+% ex: bibtool bibliografia
+
+% 4-Use as entradas normalmente no Lyx ou em outro editor tex.
+
+% 5-Se estiver no GNU/Linux, verifique se o arquivo .bib esta no formato do Unix. 
+% Use o programa dos2unix para converter arquivos do dos/windows para o GNU/Linux.
+% Use o programa unix2dos para converter arquivos do GNU/Linux para dos/windows.
+
+%   Para eliminar caracteris iso, e deixar somente ASCII, use o bibtool.
+%     bibtool -r iso2tex -i iso.bib -o ascii.bib
+
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+% Para facilitar a localizacao, use o formato
+% adb    - artigos pessoais
+% imgan  - artigos de análise de imagem
+% pm     - artigos sobre meios porosos
+% rec    - artigos reconstrução
+% perc   - artigos percolação 
+% perm   - artigos permeabilidade
+% me     - artigos multi-escala
+% prob   - artigos probabilidade, processos estocásticos
+% microt - artigos micro tomografia
+% numan  - artigos sobre métodos numéricos
+% math   - artigos matemáticos
+% sl     - software livre
+% prog   - artigos/manuais programação
+% hst    - artigos histerese
+% prog-cpp
+% prog-HOWTO
+% prog-linux
+% prog-uml
+% prog-paralela
+% prog-xml
+% prog-interface
+%--------------------------------------------------------------------
+
+% Exemplos:
+%  author =       "W. W. Howells",
+%  author =       "G. B. Johnson and W. W. Howells and A. N. Other",
+%  author =       "Firstname Jones and Firstname Norman and Firstname Hazel and Firstname Robinson",
+%  author =       "sobrenome, nome",
+% Para preservar, isto é, manter um nome use {Nome}
+
+% Definição de strings
+@string{LMPT   = {Laboratório de Meios Porosos e Propriedades Termofísicas}}
+@String{UENF   = {Universidade Estadual do Norte Fluminense}}
+@String{UFSC   = {Universidade Federal de Santa Catarina}}
+
+@Article{,
+  author = {Rogerio Leite},
+  title  = {Notas de aula: Aula Modelagem Fluido Black-Oil. Elevacao e Escoamento - Laboratorio de Engenharia e Exploracao de Petroleo LENEP.},
+  year   = {2016},
+}
+
+@Article{vieiraescoamento,
+  author = {Rinaldo Vieira},
+  title  = {Notas de aula: Curso de Escoamento Multifasico.},
+}
+
+@Thesis{velarde1997Correlation,
+  author      = {Jorge Javier Velarde},
+  title       = {Correlation of Black Oil Properties At Pressures Below Bubble Point Pressure - A New Approach},
+  type        = {Dissertação de Mestrado},
+  institution = {Texas A\&M University},
+  year        = {1997},
+}
+
+@Article{machado2002reologia,
+  author  = {MACHADO, JCV},
+  title   = {Reologia e escoamento de fluidos: enfase na industria do Petroleo. editora interciencia},
+  journal = {Petrobras, Rio de Janeiro},
+  year    = {2002},
+}
+
+@Book{thomas2001fundamentos,
+  author    = {Thomas, Jose Eduardo},
+  title     = {Fundamentos de engenharia de petroleo},
+  year      = {2001},
+  publisher = {Interci{\^e}ncia},
+}
+
+@Article{banzer1996correlaciones,
+  author  = {Banzer, Carlos},
+  title   = {Correlaciones numericas PVT},
+  journal = {INPELUZ, Maracaibo, Venezuela},
+  year    = {1996},
+}
+
+@Article{Leite2016elevacao,
+  author  = {Rogerio Leite},
+  title   = {Notas de aula: Aula Modelagem Fluido Black-Oil. Elevacao e Escoamento},
+  journal = {Laboratorio de Engenharia e Exploracao de Petroleo LENEP},
+  year    = {2016},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

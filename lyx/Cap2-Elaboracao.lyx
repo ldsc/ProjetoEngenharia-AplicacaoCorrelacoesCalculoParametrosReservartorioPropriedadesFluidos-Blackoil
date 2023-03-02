@@ -1,0 +1,1206 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master ../../../Programação Prática/Modelo de projeto/lyx/DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Elaboração}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois da definição dos objetivos, da especificação do software e da montagem
+ dos primeiros diagramas de caso de uso, neste capítulo será apresentada
+ a elaboração, que envolve o estudo de conceitos relacionados ao sistema
+ a ser desenvolvido, a análise de domínio e a identificação de pacotes.
+ Esse processo é feito através de pesquisas bibliográficas e entrevistas,
+ que nos mostram o que é necessário para a formulação do programa.
+ Uma análise dos requisitos para o funcionamento do programa será feita
+ a fim de avaliar as condições necessárias para o desenvolvimento de um
+ sistema útil, que satisfaça as necessidades requeridas e seja passível
+ de posterior extensão.
+\end_layout
+
+\begin_layout Section
+Análise de domínio
+\end_layout
+
+\begin_layout Standard
+O programa que será desenvolvido trata dos parâmetros que determinam o comportam
+ento do reservatório em termos produtivos, uma área da engenharia de reservatóri
+o muito estudada e frequentemente utilizada como uma importante ferramenta
+ na solução de diversos problemas da indústria.
+ Gerenciamento de reservatórios, por definição, é uma ciência que utiliza
+ elementos da geologia e da engenharia de petróleo para predizer o comportamento
+ do óleo e do gás natural nas formações rochosas sub-superficiais.
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+ mostra as diferentes áreas relacionadas ao software.
+ Essas vão desde elementos relacionados aos parâmetros advindos do estudo
+ geológico do reservatório e tem implicações na análise, otimização da recuperaç
+ão e outros aspectos relevantes à produção.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig3.1-AnalisedeDominio.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análise de domínio.
+ <disponível em: http://www.unisim.cepetro.unicamp.br/br/2-uncategorised/21-caracter
+izacao-de-reservatorios>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O software calculará, através do uso de correlações empíricas, parâmetros
+ importantes na análise do reservatório do ponto de vista comportamental
+ dos fluidos presentes no mesmo.
+ Isso implica diretamente na tomada de decisões quanto a engenharia de reservató
+rio a ser empregada.
+\end_layout
+
+\begin_layout Section
+Formulação teórica
+\end_layout
+
+\begin_layout Standard
+Conforme a produção de petróleo avança e a pressão do reservatório cai,
+ empresas petrolíferas utilizam modelos matemáticos para simularem como
+ a permeabilidade e as saturações de óleo e gás irão se comportar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "thomas2001fundamentos"
+
+\end_inset
+
+.
+ O uso de modelos simplificados para a realização dessa previsão se deve,
+ na maioria das vezes, a não existência de alguns dados devido à dificuldade
+ de obtê-los no inicio de um projeto de poço.
+\end_layout
+
+\begin_layout Standard
+Para simular esse comportamento dos parâmetros de um reservatório ao longo
+ da produção de um campo há diversos modelos matemáticos, uns mais abrangentes,
+ outros mais específicos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leite2016elevacao"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Em simulação, chama-se de modelagem 
+\emph on
+blackoil
+\emph default
+ aquela que pode ser assumida uma composição constante para o óleo durante
+ sua vida produtora.
+ As correlações “
+\emph on
+blackoil
+\emph default
+” foram desenvolvidas especificamente para sistemas de óleo cru / gás /
+ água e são muito úteis para prever o comportamento das fases no fluxo de
+ um poço de petróleo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "banzer1996correlaciones"
+
+\end_inset
+
+.
+ Quando usadas em conjunto com as opções de calibração, as correlações 
+\emph on
+blackoil
+\emph default
+ podem produzir dados de comportamento de fases precisos, a partir de um
+ mínimo de dados de entrada.
+ Elas são particularmente convenientes em estudos de “gás lift”, onde os
+ efeitos da variação da razão gás óleo (RGO) e corte de água estão sob investiga
+ção.
+ A modelagem 
+\emph on
+blackoil
+\emph default
+ é largamente utilizada e a grande maioria dos estudos de simulações de
+ reservatório e de escoamento adotam esta modelagem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "machado2002reologia"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+BRILL e MUKHERJEE (1999) definem 
+\emph on
+blackoil
+\emph default
+ como um termo que se refere a qualquer fase líquida que contenha gás dissolvido
+, como hidrocarbonetos, por exemplo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "velarde1997Correlation"
+
+\end_inset
+
+.
+ Esses óleos são tipicamente escuros e tem densidades menores que 40º API.
+ Sua principal característica, no entanto, é que praticamente não apresenta
+ variações na sua composição em um envelope de duas fases, sendo por isso
+ dito como um modelo de composição constante.
+\end_layout
+
+\begin_layout Standard
+Esse modelo tem capacidade de simular todos os mecanismos de produção, incluindo
+ gás em solução, capa de gás e influxo de água, com ou sem injeção de água
+ ou gás.
+\end_layout
+
+\begin_layout Standard
+No entanto, é de fundamental importância a escolha adequada do modelo a
+ ser utilizado para modelar um campo, de acordo com as propriedades e caracterís
+ticas já conhecidas, assim como validar o equacionamento do mesmo.
+ A caracterização 
+\emph on
+blackoil
+\emph default
+ é determinada através de correlações empíricas e equações 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "banzer1996correlaciones"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Correlação
+\emph on
+ 
+\series bold
+\emph default
+Standing 
+\series default
+(1947)
+\end_layout
+
+\begin_layout Itemize
+Dados experimentais 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leite2016elevacao"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+22 misturas de óleo-cru/gás natural de campos da Califórnia
+\end_layout
+
+\begin_layout Itemize
+105 pontos experimentais 
+\end_layout
+
+\begin_layout Itemize
+pb (pressão de bolha): 130 a 7000 psia
+\end_layout
+
+\begin_layout Itemize
+T (temperatura): 100 a 258 °F
+\end_layout
+
+\begin_layout Itemize
+API: 16,5 a 63,8 °API
+\end_layout
+
+\begin_layout Itemize
+dg (densidade do gás na condição standard): 0,59 a 0,95 
+\end_layout
+
+\begin_layout Itemize
+Rsb (gás em solução à pressão do ponto de bolha): 20 a 1425 scf/STB 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A Correlação de Standing permite o cálculo dos seguintes parâmetros do reservató
+rio:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pressão de Saturação ou Pressão de Bolha
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+p_{b}=18.2\left[\frac{1}{10^{(0.0125API-0.00091T)}}\left(\frac{Rs_{b}}{d_{g}}\right)^{0.83}-1.4\right]\label{eq:Pressão de Saturação (ou Pressão de Bolha) Standing}
+\end{equation}
+
+\end_inset
+
+
+\series bold
+Razão de solubilidade
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+Rs=d_{g}\left[\left(\frac{p}{18.2}+1.4\right)10^{(0,0125API-0,00091T)}\right]^{1.2048}\label{eq:Razão de Solubilidade - Standing}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fator Volume de Formação do óleo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+B_{ob}=0.972+1.47x10^{-4}\left[Rs_{b}\left(\frac{d_{g}}{d_{o}}\right)^{0.5}+1.25T\right]^{1.175}\label{eq:Fator Volume de Formação (óleo saturado) - Standing}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Correlação
+\emph on
+ 
+\series bold
+\emph default
+Vasquez & Beggs
+\series default
+ (1976)
+\end_layout
+
+\begin_layout Itemize
+Dados experimentais 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leite2016elevacao"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+600 tipos de óleo diferentes de campos de todo o mundo 
+\end_layout
+
+\begin_layout Itemize
+~6000 pontos experimentais
+\end_layout
+
+\begin_layout Itemize
+pb (pressão de bolha): 15 a 6055 psia
+\end_layout
+
+\begin_layout Itemize
+T (temperatura): 70 a 295 °F 
+\end_layout
+
+\begin_layout Itemize
+API: 15,3 a 59,5 °API 
+\end_layout
+
+\begin_layout Itemize
+dg (densidade do gás na condição standard): 0,511 a 1,351
+\end_layout
+
+\begin_layout Itemize
+Rsb (gás em solução à pressão do ponto de bolha): 0 a 2199 scf/STB
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A Correlação de Vasquez & Beggs permite o calculo dos seguintes parâmetros
+ do reservatório:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Pressão de Saturação ou Pressão de Bolha
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{b}=\left[\frac{Rs_{b}}{C_{1}*d_{gs}*e^{\frac{C_{3}API}{(T+459,67)}}}\right]^{\frac{1}{C_{2}}}\label{eq:Pressão de Saturação (ou Pressão de Bolha) - Vasquez & Beggs}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Razão de solubilidade
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+Rs=C_{1}*d_{gs}*p^{C_{2}}*e^{\frac{C_{3}API}{(T+459,67)}}\label{eq:Razão de Solubilidade - Vasquez & Beggs}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Coeficientes C da Correlação - Vasquez & Beggs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coeficiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+API > 30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+API ≤ 30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0178
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0362
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.1870
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0937
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23.931
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.742
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fator Volume de Formação do óleo
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+B_{ob}=1+A_{1*}Rs_{b}+A_{2}(T-60)\left(\frac{API}{d_{gs}}\right)+A_{3}*Rs_{b}*(T-60)\left(\frac{API}{d_{gs}}\right)\label{eq:Fator Volume de Formação (óleo saturado) - Vasquez & Beggs}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Coeficientes A da Correlação - Vasquez & Beggs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Coeficiente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+API > 30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+API ≤ 30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,670 x
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,677 x
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,100 x
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,751 x
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,377 x
+\begin_inset Formula $10^{-9}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,811 x
+\begin_inset Formula $10^{-8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+B_{o}=B_{ob}e^{c_{o}(p_{b}-p)}\label{eq:Fator Volume de Formação (óleo subsaturado) - Vasquez & Beggs}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Compressibilidade isotérmica do óleo
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+c_{o}=\frac{(-1433+5Rs+17.2T-1180d_{gs}+12.61API)}{p*10^{5}}\label{eq:Compressibilidade isotérmica do óleo (óleo subsaturado) - Vasquez & Beggs}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Correlação de Sutton
+\end_layout
+
+\begin_layout Standard
+A correlação de Sutton (2005) fornece as propriedades pseudo-críticas para
+ gás associado que posteriormente são usadas para obter as condições de
+ pressão e temperatura reduzidas e, consequentemente, o fator de compressibilida
+de Z 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leite2016elevacao"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{pc}=671,1+(14-34,3*dg)*dg\label{eq:Pressão pseudo-crítica}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+T_{pc}=120,1+(429-62,9*dg)*dg\label{eq:Temperatura pseudo-crítica}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Correlação
+\emph on
+ 
+\series bold
+\emph default
+Papay
+\end_layout
+
+\begin_layout Itemize
+Propriedades do óleo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leite2016elevacao"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Range de validade da equação:
+\begin_inset Formula $\begin{cases}
+0.2≤p_{r}≥15 & 1.2\text{≤}T_{r}\text{≥}3\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A Correlação de Papay permite o cálculo dos seguintes parâmetros do reservatório
+:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fator de compressibilidade Z
+\series default
+
+\begin_inset Formula 
+\begin{equation}
+Z=1-\frac{3,52*p_{r}}{10^{0,9813*T_{r}}}+\frac{0,274*p_{r}^{2}}{10^{0,8157*T_{r}}}\label{eq:fator de compressibilidade Z - Papay}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Correlação 
+\series bold
+Beggs & Brill
+\end_layout
+
+\begin_layout Standard
+A Correlação de Papay permite o cálculo dos seguintes parâmetros do reservatório
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Leite2016elevacao"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Fator de compressibilidade Z
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z=A+\frac{1-A}{e^{B}}+C*p_{r}^{D}\label{eq:fator de compressibilidade Z - Beggs & Brill}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=1,39*(T_{r}-0,92)^{0,5}-0,36*T_{r}-0,1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+B=(0,62-0,23*T_{r})*p_{r}+(\frac{0,066}{T_{r}-0,86}-0,037)*p_{r}^{2}+(\frac{0,32}{10^{9*(T_{r}-1)}})*p_{r}^{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C=0,132-0,32*logT_{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D=10^{(0,3106-0,49*T_{r}+0,1824*T_{r}^{2})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Correlação 
+\emph on
+Black-Oil
+\emph default
+ - Fator Volume de Formação do gás - Bg
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+B_{g}=\frac{0.00504*Z*(T+459.67)}{p}\label{eq:Fator Volume de Formação do gás - Bg}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Identificação de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+A partir da análise dos modelos apresentados, pode-se identificar os seguintes
+ assuntos/pacotes:
+\end_layout
+
+\begin_layout Itemize
+Pacote Banco de dados: Composto por arquivos de disco com dados de poços
+ de petróleo necessários para o cálculo dos parâmetros requeridos.
+\end_layout
+
+\begin_layout Itemize
+Pacote Correlações: Calcula os parâmetros termodinâmicos usando as correlações
+ listadas, se mais de uma estiver disponível para o mesmo parâmetro, o usuário
+ poderá escolher qual correlação deseja usar.
+\end_layout
+
+\begin_layout Itemize
+Pacote Gráficos: Usando um software externo (GNUPLOT), será possível gerar
+ gráficos relacionando determinado parâmetro com a variação de pressão.
+\end_layout
+
+\begin_layout Itemize
+Pacote Simulador: Relaciona os pacotes acima, sendo responsável pela criação
+ e destruição de objetos, assim como interagir com o usuário através de
+ um interface via texto para definir todas as ações a serem tomadas.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+ está representado o diagrama de pacotes, mostrando a dependência entre
+ as partes do sistema.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Bosco Maciel/Downloads/Modelo - Copy/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/imagens/Fig3.2-DiagramadePacotes.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Pacotes
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

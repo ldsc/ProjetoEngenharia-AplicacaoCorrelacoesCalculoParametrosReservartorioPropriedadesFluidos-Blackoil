@@ -1,0 +1,511 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Capa
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
+ em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+DESENVOLVIMENTO DO SOFTWARE 
+\begin_inset Newline newline
+\end_inset
+
+APLICAÇÃO DE CORRELAÇÕES PARA CÁLCULO DE PARÂMETROS DE RESERVATÓRIO A PARTIR
+ DE PROPRIEDADES DOS FLUIDOS – MODELAGEM 
+\emph on
+BLACKOIL
+\emph default
+
+\begin_inset Newline newline
+\end_inset
+
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+VERSÃO 1.0
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+JOÃO BOSCO MACIEL FILHO
+\begin_inset Newline newline
+\end_inset
+
+SUSANE CHELLI CAIRES GOIS
+\begin_inset Newline newline
+\end_inset
+
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o valor de 4cm pode ser alterado, para que a distribuição fique mais uniforme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Julho - 2017
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{João Bosco e Susane Chelli} 
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Substitua "SeuNomeAqui" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente projeto de engenharia desenvolve-se o software CCPRMB (Correlações
+ para Cálculo de Parâmetros de Reservatório – Modelagem 
+\emph on
+BlackOil
+\emph default
+), um software aplicado a engenharia de petróleo e que utiliza o paradigma
+ da orientação a objetos.
+\end_layout
+
+\begin_layout Standard
+Neste projeto são implementadas equações de correlações empíricas baseadas
+ na abordagem de modelamento de fluido 
+\emph on
+BlackOil
+\emph default
+.
+ Por meio dessas correlações é possível calcular parâmetros de um reservatório
+ a partir de variáveis de entrada referentes às características dos fluidos
+ produzidos.
+ 
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O conhecimento das propriedades físico-químicas dos fluidos no reservatório
+ é necessário para a determinação da quantidade de óleo presente e como
+ este irá se comportar quanto à produção, entre outros aspectos.
+ O gerenciamento do reservatório e implementação de estratégias de produção
+ dependem diretamente dessas condições.
+\end_layout
+
+\begin_layout Standard
+São necessários modelos matemáticos para descrever as propriedades dos fluidos
+ e as interações entre elas.
+ Cada parâmetro é calculado por uma equação (correlação) a partir de variáveis
+ de entrada.
+ O método de modelagem de fluido 
+\emph on
+BlackOil
+\emph default
+ aplica-se bem quando os parâmetros estão dentro das faixas utilizadas nos
+ experimentos laboratoriais para o desenvolvimento da correlação porém,
+ a extrapolação para faixas fora daquelas utilizadas nos experimentos laboratori
+ais deve ser feita com cautela, e pode-se gerar erros consideráveis.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Utilizar correlações empíricas para cálculo de parâmetros de um reservatório
+ a partir de propriedades dos fluidos presentes no mesmo – Modelagem 
+\emph on
+BlackOil.
+\end_layout
+
+\begin_layout Itemize
+Calcular propriedades dos fluidos a partir de dados externos.
+\end_layout
+
+\begin_layout Itemize
+Calcular parâmetros de um reservatório utilizando correlações específicas.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modelar física e matematicamente o problema
+\end_layout
+
+\begin_layout Itemize
+Calcular Pressão de Bolha - Pb
+\end_layout
+
+\begin_layout Itemize
+Calcular Razão de Solubilidade - Rs
+\end_layout
+
+\begin_layout Itemize
+Calcular Fator Volume de Formação do óleo - Bo
+\end_layout
+
+\begin_layout Itemize
+Calcular Fator Volume de Formação do gás - Bg
+\end_layout
+
+\begin_layout Itemize
+Calcular Fator de Compressibilidade do gás - Z
+\end_layout
+
+\begin_layout Itemize
+Calcular Compressibilidade - Co
+\end_layout
+
+\begin_layout Itemize
+Utilizar a correlação de Standing 
+\end_layout
+
+\begin_layout Itemize
+Utilizar a correlação de Vasquez & Beggs
+\end_layout
+
+\begin_layout Itemize
+Utilizar a correlação de Papay
+\end_layout
+
+\begin_layout Itemize
+Utilizar a correlação de Beggs & Brill
+\end_layout
+
+\begin_layout Itemize
+Gerar gráficos a partir do software externo Gnuplot 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
